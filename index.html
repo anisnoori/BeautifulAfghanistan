@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>شهرهای فرهنگی افغانستان</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Vazirmatn", sans-serif;
+        background-color: #ffbc6f;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #ffbc6f;
+        color: #006e6d;
+        text-align: center;
+        padding: 30px 10px;
+      }
+      nav {
+        background-color: #333;
+        text-align: center;
+        padding: 12px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      nav a:hover {
+        color: #ffb400;
+      }
+      .city-section {
+        padding: 50px 20px;
+        margin: 30px auto;
+        background-color: #ff7b47;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 900px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        animation: fadeInUp 1s ease-out;
+      }
+      .city-section h2 {
+        color: #006e6d;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      .city-section p {
+        font-size: 16px;
+        color: #444;
+      }
+      .city-section img {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+      button {
+        background-color: #006e6d;
+        color: #fff;
+        border: none;
+        padding: 10px 16px;
+        margin-top: 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      button:hover {
+        background-color: #004f4f;
+      }
+      .extra-info {
+        display: none;
+        margin-top: 20px;
+      }
+      .info-card {
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 15px;
+        border-left: 5px solid #ffb400;
+        border-radius: 8px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        animation: popIn 1s ease-out;
+      }
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes popIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🌍 شهرهای فرهنگی افغانستان</h1>
+      <p>با افتخار، نگاهی به هرات، کابل، مزار شریف و بلخ</p>
+    </header>
+
+    <nav>
+      <a href="#herat">هرات</a>
+      <a href="#kabul">کابل</a>
+      <a href="#mazar">مزار شریف</a>
+      <a href="#balkh">بلخ</a>
+    </nav>
+
+    <!-- Herat -->
+    <section id="herat" class="city-section">
+      <h2>🏰 هرات - قلعه تاریخی</h2>
+      <p>قلعه‌ی اسکندر، میراث فرهنگی غرب افغانستان با قدمتی بیش از ۲۳۰۰ سال.</p>
+      <img src="Herat_Citadel.jpg" alt="قلعه هرات" />
+      <button onclick="toggleDetails('herat-extra')">بیشتر بدانید</button>
+      <div id="herat-extra" class="extra-info">
+        <div class="info-card">
+          <h3>🎨 هنر هرات</h3>
+          <p>
+            هرات مهد مینیاتور و خطاطی اسلامی‌ست. هنرمندان دوره تیموری آثاری
+            خارق‌العاده خلق کرده‌اند.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>🍲 غذای محلی</h3>
+          <p>
+            آش ماست، کباب زغالی و منتو از غذاهای محبوب سنتی هرات هستند که طعمی
+            ویژه دارند.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kabul -->
+    <section id="kabul" class="city-section">
+      <h2>🏛 کابل - باغ بابر</h2>
+      <p>آرامگاه بابر و باغ ایرانی-مغولی، نماد زیبایی تاریخی در کابل.</p>
+      <img src="Babur_Garden.jpg" alt="باغ بابر کابل" />
+      <button onclick="toggleDetails('kabul-extra')">بیشتر بدانید</button>
+      <div id="kabul-extra" class="extra-info">
+        <div class="info-card">
+          <h3>🎨 هنر کابل</h3>
+          <p>
+            کابل جایگاه هنر معماری مغولی، کتیبه‌ها و طراحی باغ‌های هندسی‌ست.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>🍲 غذای محلی</h3>
+          <p>قابلی‌پلو با کشمش و گوشت، یکی از غذاهای سنتی و دل‌چسب کابل است.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mazar -->
+    <section id="mazar" class="city-section">
+      <h2>🕌 مزار شریف - مسجد کبود</h2>
+      <p>مسجد حضرت علی با کاشی‌کاری آبی، نگین شمال افغانستان است.</p>
+      <img src="Mazar_Sharif.jpg" alt="مسجد کبود مزار" />
+      <button onclick="toggleDetails('mazar-extra')">بیشتر بدانید</button>
+      <div id="mazar-extra" class="extra-info">
+        <div class="info-card">
+          <h3>🎨 هنر مزار</h3>
+          <p>مزار مرکز شعر عرفانی و جشن‌های فرهنگی مانند نوروز است.</p>
+        </div>
+        <div class="info-card">
+          <h3>🍲 غذای محلی</h3>
+          <p>بولانی و شوروا از غذاهای خوشمزه و اصیل منطقه‌اند.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Balkh -->
+    <section id="balkh" class="city-section">
+      <h2>🏯بلخ -</h2>
+      <p>بلخ، شهر باستانی با مرکز معنویت بودایی و زرتشتی در آسیای میانه است.</p>
+      <img src="Blue_Mosque.jpg" alt="نوبهار بلخ" />
+      <button onclick="toggleDetails('balkh-extra')">بیشتر بدانید</button>
+      <div id="balkh-extra" class="extra-info">
+        <div class="info-card">
+          <h3>🎨 هنر بلخ</h3>
+          <p>
+            نقاشی‌های بودایی، حجاری و معماری سنگی از جلوه‌های هنری بلخ
+            باستان‌اند.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>🍲 غذای محلی</h3>
+          <p>
+            غذاهای گیاهی مثل آش سبزی و نان تنوری از خوراک‌های محبوب این
+            منطقه‌اند.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleDetails(id) {
+        const section = document.getElementById(id);
+        section.style.display =
+          section.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
